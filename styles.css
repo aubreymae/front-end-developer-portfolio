@@ -13,36 +13,6 @@ p {
   padding: 0;
 }
 
-/* Mobile View */
-@media only screen and (max-width: 64rem) {
-  body {
-    margin: 40px;
-  }
-
-  .project-container {
-    grid-template-columns: 1fr;
-  }
-
-  .project-imgs {
-    width: 100%;
-    border-radius: 20px;
-  }
-
-  /* .card-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 1rem;
-  }
-
-  .card-button {
-    padding: 1rem;
-    border-radius: 100px;
-    background-color: #d9d9d9;
-    font-size: 1rem;
-  } */
-}
-
 /* Desktop View */
 
 header {
@@ -89,4 +59,16 @@ header {
   border-radius: 100px;
   background-color: #d9d9d9;
   font-size: 1rem;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 64rem) {
+  body {
+    margin: 40px;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
