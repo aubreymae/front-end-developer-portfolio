@@ -13,6 +13,11 @@ p {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Desktop View */
 
 header {
@@ -50,7 +55,8 @@ header {
 .card-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
@@ -59,10 +65,21 @@ header {
   border-radius: 100px;
   background-color: #d9d9d9;
   font-size: 1rem;
+  transition: 1s;
+}
+
+.external-links {
+  width: 25px;
+  height: 25px;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  font-size: 1rem;
+  transition: 1s;
 }
 
 /* Mobile View */
-@media only screen and (max-width: 64rem) {
+@media only screen and (max-width: 75rem) {
   body {
     margin: 40px;
   }
